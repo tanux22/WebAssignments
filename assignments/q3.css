@@ -1,0 +1,38 @@
+
+.out{
+    border: 2px solid black;
+    height: 43vh;
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 27vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+    
+}
+
+.left
+{
+    background-color: lightskyblue;
+    text-align: center ;
+    width: 25%;
+    height: 27vh;
+}
+
+.center{
+    background-color: palevioletred;
+    text-align: center ;
+    width: 25%;
+    height: 27vh;
+}
+
+
+.right{
+    background-color: lightgreen;
+    text-align: center ;
+    width: 25%;
+    height: 27vh;
+}

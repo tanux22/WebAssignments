@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+}
+header{
+    background-color: #F3D7CA;
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    align-items: center;
+
+   
+}
+#logo{
+    margin: 40px;
+    border:  2px solid;
+    padding: 10px;
+    font-weight: bolder;
+}
+#links{
+    display: flex;
+    padding: auto;
+    width: 30%;
+    justify-content: space-evenly;
+
+
+}
+.link{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+#hl{
+    align-items: center;
+    margin: 10px;
+    background-color:#7FC7D9;
+    padding: 10px;
+    height:90% ;
+    border: solid black;
+   display: flex;
+   justify-content: center;
+   font-weight: bolder;
+   
+}
+#img{
+    padding: 5em;
+}
+#piece{
+    box-sizing: border-box;
+    background-color:#7FC7D9;
+    margin: 10px;
+    width: 50vh;
+    height: 10vh;
+    padding: 12px 12px;
+    align-items: center;
+}
+#content{
+    font-size: 18px;
+    font-weight: bolder;
+}
+#author{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bolder;
+}

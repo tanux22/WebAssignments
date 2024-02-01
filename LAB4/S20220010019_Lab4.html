@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #000046, #64a8f0);
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        h2 {
+            color: #1CB5E0;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            margin-bottom: 2rem;
+            background-color: black;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-top: 0;
+            background: linear-gradient(to right, #000029, #0b4a8f);
+        }
+
+        h3 {
+            color: #1CB5E0;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 2rem;
+            background-color: black;
+            border-radius: 10px;
+            padding: 0.5rem;
+            margin-top: 0;
+            margin-top: 2em;
+            background: linear-gradient(to right, #000029, #073669);
+            text-align: center;
+        }
+
+        .student-form,
+        .sorting-block {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            margin: 20px 20px;
+            border-radius: 10px;
+        }
+
+        .bio-data {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            margin: 20px 20px;
+            border-radius: 10px;
+
+        }
+
+        .bio-data p strong {
+            margin: 10px 0;
+            color: #1CB5E0;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #1CB5E0;
+            margin-bottom: 5%;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: linear-gradient(to right, #000046, #073f7b);
+            color: #1CB5E0;
+        }
+
+        input,
+        select {
+            width: 50%;
+            padding: 8px;
+            margin: 5px 0;
+            margin-bottom: 1rem;
+            display: block;
+            border: 1px solid #1CB5E0;
+            box-sizing: border-box;
+            border-radius: 5px;
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+
+        label {
+            margin-bottom: 0.5rem;
+            width: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #1CB5E0;
+            color: #000046;
+            cursor: pointer;
+            margin-left: 45%;
+            width: 10%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #15748e;
+        }
+
+        .sorting-block select {
+            width: auto;
+        }
+
+        .sorting-block button {
+            background-color: #1CB5E0;
+            color: #000046;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .sorting-block button:hover {
+            background-color: #000046;
+        }
+
+        .line {
+            width: 50%;
+            height: 10%;
+            border-right: 3px solid #1CB5E0;
+            margin: 0 20px;
+            padding: 20px;
+        }
+
+        .lin {
+            width: 50%;
+            padding: 20px;
+            margin-right: 10px;
+        }
+
+        .cont {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid #1CB5E0;
+        }
+
+        .fom {
+            text-align: left;
+            margin-left: 35%;
+        }
+
+        .option {
+            display: block;
+        }
+
+        .con {
+            border-bottom: 2px solid #1CB5E0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bio-data">
+        <h2>Bio Data</h2>
+        <div class="cont">
+            <div class="line">
+                <p><strong>Name:</strong> Aramati Tanush Reddy</p>
+                <p><strong>Age:</strong> 19</p>
+                <p><strong>Date of Birth:</strong> 28-05-2004</p>
+                <p><strong>Gender:</strong> Male</p>
+                <p><strong>City:</strong> Bangalore</p>
+                <p><strong>Country:</strong> India</p>
+                <p><strong>Education:</strong> IIITS, Btech</p>
+            </div>
+            <div class="lin">
+                <p><strong>Marital Status:</strong> Unmarried</p>
+                <p><strong>Phone Number:</strong> 8088914767</p>
+                <p><strong>Email:</strong> tanushreddy.a22@gamil.com</p>
+                <p><strong>Technical Skills:</strong> Web, AI/ML </p>
+                <p><strong>Languages Spoken:</strong> English, Hindi, Telugu</p>
+                <p><strong>Soft Skills:</strong> Badminton, Drawing, Singing</p>
+                <p><strong>Skills:</strong> HTML, CSS, JavaScript, etc.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="student-form">
+        <h2>Student Details</h2>
+        <div class="con">
+            <form id="studentForm">
+                <div class="fom">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="fom">
+                    <label for="rollNo">Roll No.:</label>
+                    <input type="text" id="rollNo" required>
+                </div>
+
+                <div class="fom">
+                    <label for="email">Email ID:</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <h3>Marks</h3>
+                <div class="forr">
+                    <div class="fom">
+                        <label for="subject1">Mathematics:</label>
+                        <input type="number" id="subject1" required>
+                    </div>
+
+                    <div class="fom">
+                        <label for="subject2">Science:</label>
+                        <input type="number" id="subject2" required>
+                    </div>
+
+                    <div class="fom">
+                        <label for="subject3">English:</label>
+                        <input type="number" id="subject3" required>
+                    </div>
+
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Roll No.</th>
+                        <th>Email ID</th>
+                        <th>Mathematics</th>
+                        <th>Science</th>
+                        <th>English</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Student information will be displayed here dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="sorting-block">
+        <div class="con">
+            <h2>Sorting Elements</h2>
+            <label for="elementList">Element List (comma-separated):</label>
+            <input type="text" id="elementList" placeholder="e.g., 5,3,8,1" required>
+
+            <div class="option">
+                <label for="sortType">Sort Type:</label>
+                <select id="sortType">
+                    <option value="ascending">Ascending</option>
+                    <option value="descending">Descending</option>
+                </select>
+            </div>
+
+            <button onclick="sortElements()">Sort</button>
+
+            <p id="sortedResult"></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("studentForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+
+            var name = document.getElementById("name").value;
+            var rollNo = document.getElementById("rollNo").value;
+            var email = document.getElementById("email").value;
+            var subject1 = document.getElementById("subject1").value;
+            var subject2 = document.getElementById("subject2").value;
+            var subject3 = document.getElementById("subject3").value;
+
+
+            if (!name || !rollNo || !email || !subject1 || !subject2 || !subject3) {
+                alert("All fields are required!");
+                return;
+            }
+
+            var table = document.getElementById("studentTable").getElementsByTagName('tbody')[0];
+            var newRow = table.insertRow(table.rows.length);
+            var cells = [
+                newRow.insertCell(0),
+                newRow.insertCell(1),
+                newRow.insertCell(2),
+                newRow.insertCell(3),
+                newRow.insertCell(4),
+                newRow.insertCell(5)
+            ];
+
+            cells[0].innerHTML = name;
+            cells[1].innerHTML = rollNo;
+            cells[2].innerHTML = email;
+            cells[3].innerHTML = subject1;
+            cells[4].innerHTML = subject2;
+            cells[5].innerHTML = subject3;
+
+            document.getElementById("studentForm").reset();
+        });
+
+        function sortElements() {
+    var elementList = document.getElementById("elementList").value;
+    var sortType = document.getElementById("sortType").value;
+    var elementsArray = elementList.split(",");
+
+    for (var i = 0; i < elementsArray.length; i++) {
+        var numericValue = parseFloat(elementsArray[i]);
+        
+        if (!isNaN(numericValue)) {
+            elementsArray[i] = numericValue;
+        }
+       
+    }
+
+    if (sortType === "ascending") {
+        elementsArray.sort(function (a, b) {
+            return a - b;
+        });
+    } else if (sortType === "descending") {
+        elementsArray.sort(function (a, b) {
+            return b - a;
+        });
+    }
+
+    document.getElementById("sortedResult").innerText = "Sorted Elements: " + elementsArray.join(", ");
+}
+
+    </script>
+
+</body>
+
+</html>

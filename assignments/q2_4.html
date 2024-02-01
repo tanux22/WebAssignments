@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Commerce Store</title>
+    <style>
+        html{
+            height: 100vh;
+        }
+        body {
+            background: linear-gradient(to bottom right, #1a1a1a, #00539f);
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(to right, #00539f, #00bfff);
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        section h2 {
+            color: #00bfff;
+            border-bottom: 2px solid #00bfff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-info-item {
+            margin-bottom: 20px;
+            /* flex: 1 1 300px; */
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .contact-form button {
+            background: linear-gradient(to right, #00539f, #00bfff);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 2px solid black;
+            transition: background 1s;
+        }
+
+        .contact-form button:hover {
+            background: linear-gradient(to right, #00bfff, #00539f);
+            border: 2px solid black;
+            ;
+        }
+
+        footer {
+            background: linear-gradient(to right, #00539f, #00bfff);
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <section>
+        <p>Have questions or need assistance? Feel free to contact our customer support team.</p>
+
+        <h2>Contact Information</h2>
+        <div class="contact-info">
+            <div class="contact-info-item">
+                <h3>Email</h3>
+                <p><a href="mailto:info@example.com">info@example.com</a></p>
+            </div>
+            <div class="contact-info-item">
+                <h3>Phone</h3>
+                <p>+1 (123) 456-7890</p>
+            </div>
+            <div class="contact-info-item">
+                <h3>Address</h3>
+                <p>123 Street, Cityville, Country</p>
+            </div>
+        </div>
+
+        <h2>Contact Form</h2>
+        <div class="contact-form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 My E-Commerce Store. All rights reserved.
+    </footer>
+
+</body>
+</html>

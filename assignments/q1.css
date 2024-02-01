@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    height: 100vh;
+    border: 7px solid brown;
+    padding: 30vh;
+  }
+  
+  #personal {
+    display: inline-block;
+  }
+  
+  #img {
+    display: inline-block;
+  
+    position: relative;
+    top: -10px;
+    left: 40px;
+    align-items: center;
+    width: 30vh;
+  }
+  
+  img {
+    height: 30vh;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .info{
+      display: flex;
+      justify-content: space-between;
+  }
+  .insti{
+      text-align: right;
+  }
